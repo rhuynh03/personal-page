@@ -85,7 +85,7 @@ input, select, textarea {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/richard-pfp-8.png");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2758,13 +2758,12 @@ input, select, textarea {
 				width: calc(100% - 10px);
 			}
 
-		.main .goto-next {
+		.main .goto {
 			-moz-transition: background-color 0.2s ease-in-out;
 			-webkit-transition: background-color 0.2s ease-in-out;
 			-ms-transition: background-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out;
 			background-color: rgba(144, 144, 144, 0.075);
-			background-image: url("images/arrow.svg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			border-radius: 100%;
@@ -2781,6 +2780,14 @@ input, select, textarea {
 			white-space: nowrap;
 			width: 4em;
 		}
+
+			.main .goto-next {
+				background-image: url("images/arrow.svg");
+			}
+
+			.main .goto-top {
+				background-image: url("images/upward-arrow.svg");
+			}
 
 			.main .goto-next:hover {
 				background-color: rgba(144, 144, 144, 0.15);
@@ -2856,7 +2863,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		min-height: 100vh;
+		/* min-height: 100vh; */
 		padding: 0 0 12em 0;
 		position: relative;
 		text-align: center;
